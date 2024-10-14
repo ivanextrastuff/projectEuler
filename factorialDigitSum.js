@@ -1,4 +1,4 @@
-function factorial(x) {
+export function factorial(x) {
     if (x == 0) return BigInt(1)
     else return BigInt(x) * factorial(x - 1)
 }
