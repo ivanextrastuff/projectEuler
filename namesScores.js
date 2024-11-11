@@ -1,6 +1,6 @@
 let file = Bun.file('./names.txt')
 let text = await file.text()
-let arr = text.split(",").map(str => str.trim().replace(/^"|"$/g, ""))
+let arr = text.split(",").map(str => str.trim().replace(/^"|"$/g, "")).sort()
 let alphabetObject = {}
 function wordScore(s) {
     let score = 0 
